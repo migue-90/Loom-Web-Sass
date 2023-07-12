@@ -1,0 +1,31 @@
+@use "variables"
+@use "mixins"
+
+.header
+  position: sticky
+  left: 0
+  right: 0
+  top: 0
+  box-shadow:  0 0px 1rem variables.$color__shadow
+  background: variables.$color__bg
+  z-index: 100
+  & > .container
+    display: flex
+    justify-content: space-between
+    align-items: center
+    gap: variables.$gap__m
+  &__logo
+    max-width: 10rem
+  .nav
+    &__link
+      display: inline-block
+      text-decoration: none
+      width: max-content
+      box-sizing: border-box
+      padding: variables.$gap__m
+      &:not(.button)
+        color: variables.$color__text
+        @include mixins.hover
+          color: variables.$color__enfasis
+      &__active
+        font-weight: bold

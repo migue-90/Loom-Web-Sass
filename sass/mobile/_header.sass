@@ -1,0 +1,33 @@
+@use "variables"
+
+.header
+  position: fixed
+  left: 0
+  right: 0
+  bottom: 0
+  box-shadow:  0 0px 1rem variables.$color__shadow
+  background: variables.$color__bg
+  z-index: 100
+  & > .container
+    display: grid
+    gap: variables.$gap__m
+    grid-template-columns: 5rem 1fr
+
+  &__
+    &link
+      display: flex
+      align-items: center
+  .nav
+    overflow-x: auto
+    &__ul
+      flex-wrap: nowrap
+    &__link
+      display: inline-block
+      text-decoration: none
+      width: max-content
+      box-sizing: border-box
+      padding: variables.$gap__m
+      &:not(.button)
+        color: variables.$color__text
+      &__active
+        font-weight: bold

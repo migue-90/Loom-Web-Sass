@@ -1,0 +1,53 @@
+@use "variables"
+@use "mixins"
+@use "typography"
+// Generales
+
+body
+  font-family: typography.$font__main
+
+// componentes
+
+.container
+  max-width: 62rem
+  padding-inline: 1rem
+  margin-inline: auto
+
+.image
+  display: block
+  width: 100%
+  object-fit: cover
+  object-position: center
+
+.ul-reset
+  display: flex
+  flex-wrap: wrap
+  list-style: none
+  padding: 0
+
+.link
+  display: inline-block
+  color: inherit
+  text-decoration: none
+
+.bold
+  font-weight: bold
+
+.button
+  display: inline-flex
+  align-items: center
+  box-sizing: border-box
+  padding: variables.$gap__xs variables.$gap__l
+  text-decoration: none
+  font-weight: bold
+  box-shadow: 0 0 variables.$gap__xs transparentize(variables.$color__enfasis, .1)
+  min-width: variables.$gap__m
+  width: max-content
+  background: variables.$color__enfasis
+  color: variables.$color__bg
+  border-radius: .2rem
+  @include mixins.hover
+    background: variables.$color__main
+    color: variables.$color__bg
+    box-shadow: 0 0 variables.$gap__xs transparentize(variables.$color__main, .1)
+

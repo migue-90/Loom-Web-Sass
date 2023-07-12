@@ -1,0 +1,72 @@
+@use "variables"
+
+.hero
+  & > .container
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-template-rows: repeat(3, auto)
+    grid-template-areas: "title image" "description image" "link image"
+    gap: variables.$gap__xl
+    margin-top: variables.$gap__xl
+  &__hgroup
+    grid-area: title
+  &__title
+    margin-bottom: 0
+    font-size: variables.$gap__xl
+  &__description
+    grid-area: description
+    margin-top: 0
+  &__link
+    grid-area: link
+  &__image
+    grid-area: image
+  &__text-map
+    font-weight: bold
+  &__text-red
+    color: variables.$color__main
+
+.cases
+  padding-top: variables.$gap__xl
+  &__hgroup
+    margin-bottom: variables.$gap__xl
+    padding-block: variables.$gap__xl
+  &__title
+    font-size: variables.$gap__xxl
+    text-align: center
+    margin-bottom: 0
+
+  &__subtitle
+    font-size: variables.$gap__s
+    text-align: center
+  &__items
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    gap: variables.$gap__xxl
+
+.cases-item
+  border-radius: variables.$gap__m
+  box-shadow: 0 0 1rem variables.$color__shadow
+  margin-bottom: variables.$gap__l
+  transition: .5s
+  &:hover
+    transform: rotate(3deg)
+
+  &__cover
+    height: 14rem
+    border-top-left-radius: variables.$gap__m
+    border-top-right-radius: variables.$gap__m
+  &__hgroup
+    padding: variables.$gap__l
+  &__title
+    margin-bottom: 0
+  &__summary
+    margin-top: variables.$gap__s
+    min-height: variables.$gap__xl
+  &__link
+    display: block
+
+.video
+  padding-block:  10rem
+  text-align: center
+  &__subtitle
+    margin-block: variables.$gap__xl

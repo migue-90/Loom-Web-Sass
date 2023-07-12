@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<!-- Hace saber al navegador que la página esta en castellano -->
+    <html lang="es">
+    <!--Configuraciones-->
+    <head>
+        <!-- Permite carácteres extraños del alfabeto americano: ñ, á, é... -->
+        <meta charset="utf-8">
+        <!--Título que aparecerá en la pestaña - La estructura será el nombre de la página actual + Descripción del sitio-->
+        <title>Loom</title>
+        <!-- Icono que acompañará al title. También será el icono que se guardará a la hora de que hagan un marcador. Se recomienda un tamaño de 32x32 y en PNG	-->
+        <link rel="icon" type="image/png" href="favicon.png">
+        <!-- (Opcional: Solo Safari) Previsualización en marcadores -->
+        <link rel="apple-touch-icon" sizes="152x152" href="/static/img/apple-touch-icon/touch-icon-ipad.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/static/img/apple-touch-icon/touch-icon-iphone-retina.png">
+        <link rel="apple-touch-icon" sizes="167x167" href="/static/img/apple-touch-icon/touch-icon-ipad-retina.png">
+        <!-- (Opcional) Sugiere un color al navegador para personalizar la ventana en general -->
+        <meta name="theme-color" content="##e96a66">
+        <!-- Bloquea el zoom en smartphones-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <!--Declara quien es el autor. Sin utilidad práctica -->
+        <meta name="author" content="Miguel Angel Villagrasa Ballester">
+        <!-- Declara palabras claves -->
+        <meta name="keywords" content="html, css, javascript">
+        <!-- Declara la descripción de la web. Es utilizado por los motores de busqueda para la previa -->
+        <meta name="description" content="Ejemplo portafolio">
+        <!-- Open Graph y Twitter card: Declara como se mostrará la previa del enlace si es compartida por Facebook o alguna otra red social -->
+        <meta property="og:image" content="img/miniatura.png">
+        <meta property="og:title" content="The Rock">
+        <!-- website, video, audio, article, book o profile -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="http://www.imdb.com/title/tt0117500/">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@cuenta">
+        <meta name="twitter:creator" content="@cuenta">
+        <!-- Open Graph Imagen completa (Opcional) -->
+        <meta property="og:image:secure_url" content="https://secure.example.com/ogp.jpg">
+        <meta property="og:image:type" content="image/jpeg">
+        <meta property="og:image:width" content="400">
+        <meta property="og:image:height" content="300">
+        <meta property="og:image:alt" content="A shiny red apple with a bite taken out">
+        <!-- split media -->
+        <link href="css/mobile.css" rel="stylesheet" media="all and (max-width: 600px)">
+        <link href="css/desktop.css" rel="stylesheet" media="all and (min-width: 600px)">
+        <!-- fuente -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <!-- JavaScript -->
+        <script src="js/main.js" defer></script>
+    </head>
+    <!-- Fin JavaScript -->
+    <!-- Estilos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Fin Estilos -->
+    <!--Contenido de la web-->
+    <body>
+        <header class="header">
+            <div class="container">
+                <a href="#" class="link header__link">
+                    <img  class="image header__logo" src="img/loom_logo.webp" alt="">
+                </a>
+                <nav class="nav">
+                    <ul class="ul-reset nav__ul">
+                        <li class="nav__item"><a href="#" class="nav__link nav__active--active">¿Por qué usarlo?</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Precio</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Nosotros</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Login</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link button">Obtener gratis</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section class="hero">
+                <div class="container">
+                    <hgroup class="hero__hgroup">
+                        <p class="bold">Casos de uso <span>➡️</span> <span data-aos="fade-up" class="hero__text-red">Páginas web</span></p>
+                        <h1 data-aos="fade-up" class="hero__title">Creación de webs</h1>
+                    </hgroup>
+                    <p data-aos="fade-up" class="hero__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos dolore natus, porro soluta unde voluptate! Architecto asperiores beatae dolore doloribus eius excepturi facilis harum, ipsam laborum molestias odio sunt! Et.</p>
+                    <a class="link hero__link button" href="#">Ver más</a>
+                    <img class="image hero__image" src="img/article-1.webp" alt="dispositivo">
+                </div>
+            </section>
+            <section class="cases">
+                <div class="container">
+                    <hgroup class="cases__hgroup">
+                        <h1 data-aos="fade-up" class=cases__title> Casos de uso</h1>
+                        <P class="cases__subtitle">El mejor diseñador</P>
+                    </hgroup>
+                    <div class="cases__items">
+                        <article data-aos="fade-up" class="cases-item">
+                            <a href="" class="link cases-item__link">
+                            <img src="img/article-1.webp" alt="laptop" class="image cases-item__cover">
+                            <hgroup class="cases-item__hgroup">
+                            <h2 class="cases-item__title">Hello</h2>
+                            <p class="cases-item__summary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis cum, dicta dignissimos dolores, eos excepturi expedita harum labore laudantium maxime molestias nesciunt non odit quos reprehenderit sint temporibus unde ut.</p>
+                            </hgroup>
+                        </a>
+                        </article>
+                        <article data-aos="fade-up" class="cases-item">
+                            <a href="" class="link cases-item__link">
+                            <img src="img/article-2.webp" alt="laptop" class="image cases-item__cover">
+                            <hgroup class="cases-item__hgroup">
+                            <h2 class="cases-item__title">Hello</h2>
+                            <p class="cases-item__summary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium iste quod veritatis. Aperiam eius error maiores minima nostrum perferendis sed. Doloremque expedita, iure necessitatibus nemo sed sit sunt suscipit voluptas.</p>
+                            </hgroup>
+                            </a>
+                        </article>
+                        <article data-aos="fade-up" class="cases-item">
+                            <a href="" class="link cases-item__link">
+                            <img src="img/article-3.webp" alt="laptop" class="image cases-item__cover">
+                            <hgroup class="cases-item__hgroup">
+                            <h2 class="cases-item__title">Hello</h2>
+                            <p class="cases-item__summary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquam aliquid aut beatae cumque, dicta dolor doloribus excepturi iure laboriosam maxime nesciunt nostrum optio perspiciatis reprehenderit sunt ullam voluptate voluptatum.</p>
+                            </hgroup>
+                            </a>
+                        </article>
+                        <article data-aos="fade-up" class="cases-item">
+                            <a href="" class="link cases-item__link">
+                            <img src="img/article-4.webp" alt="laptop" class="image cases-item__cover">
+                            <hgroup class="cases-item__hgroup">
+                            <h2 class="cases-item__title">Hello</h2>
+                            <p data-aos="fade-up" class="cases-item__summary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur dolores earum error eum fuga hic iusto labore, nemo quasi vel. Corporis cupiditate, magnam molestias nam omnis provident quisquam ut? Nisi.</p>
+                            </hgroup>
+                            </a>
+                        </article>
+                        <article data-aos="fade-up" class="cases-item">
+                            <a href="" class="link cases-item__link">
+                            <img src="img/article-5.webp" alt="laptop" class="image cases-item__cover">
+                            <hgroup class="cases-item__hgroup">
+                            <h2 class="cases-item__title">Hello</h2>
+                            <p class="cases-item__summary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab aliquam beatae dolorem, dolores earum, enim ex explicabo facere fugit maiores molestias nam optio quas repellat sunt tempora ullam voluptas!</p>
+                            </hgroup>
+                            </a>
+                        </article>
+                        <article data-aos="fade-up" class="cases-item">
+                            <a href="" class="link cases-item__link">
+                            <img src="img/article-6.webp" alt="laptop" class="image cases-item__cover">
+                             <hgroup class="cases-item__hgroup">
+                            <h2 class="cases-item__title">Hello</h2>
+                            <p class="cases-item__summary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias animi aspernatur distinctio error facere facilis fugit illum iure iusto mollitia non optio quod sunt, temporibus, totam ullam, voluptatibus! Consequuntur, voluptate?</p>
+                             </hgroup>
+                            </a>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <section class="video">
+                <div class="container">
+                <h1 class="video__title">Tengo tutoriales en video</h1>
+                <p class="video__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, perspiciatis.</p>
+                <a class="link button" href="#">ver todo el material</a>
+                </div>
+            </section>
+        </main>
+        <footer data-aos="fade-up" class="footer">
+            <div class="container">
+                <details class="subnav subnav--primero">
+                    <summary class="subnav__title">Productos</summary>
+                    <ul class="ul-reset nav__ul">
+                        <li class="nav__item"><a class="link nav__link" href="#">primero</a></li>
+                        <li class="nav__item"><a class="link nav__link" href="#">segundo</a></li>
+                        <li class="nav__item"><a class="link nav__link" href="#">tercero</a></li>
+                        <li class="nav__item"><a class="link nav__link" href="#">cuarto</a></li>
+                        <li class="nav__item"><a class="link nav__link" href="#">quinto</a></li>
+                    </ul>
+                </details>
+                <details class="subnav subnav--segundo">
+                    <summary class="subnav__title">Legal</summary>
+                    <ul class="ul-reset nav__ul">
+                        <li class="nav__item"><a class="link nav__link" href="#">primero</a></li>
+                        <li class="nav__item"><a class="link nav__link" href="#">segundo</a></li>
+                        <li class="nav__item"><a class="link nav__link" href="#">tercero</a></li>
+                        <li class="nav__item"><a class="link nav__link" href="#">cuarto</a></li>
+                        <li class="nav__item"><a class="link nav__link" href="#">quinto</a></li>
+                    </ul>
+                </details>
+                <img class="footer__logo image" src="img/loom-blanco.png" alt="logo">
+                <p class="footer__copy">&copy; 2023 loom inc</p>
+                <ul class="ul-reset social">
+                    <li class="social__item">
+                        <a class="link social__link" href="#">
+                            <img class="image social__icon" src="img/github.svg" alt="github logo">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+</html>

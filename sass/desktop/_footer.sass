@@ -1,0 +1,49 @@
+@use "variables"
+
+.footer
+  background-color: variables.$color__main
+  padding-block: variables.$gap__l
+  font-weight: bold
+  & > .container
+    display: grid
+    grid-template-columns: 1fr auto auto
+    grid-template-areas: "logo producto legal" "copy producto legal" "social producto legal" "social producto legal"
+
+  .subnav
+      margin-left: variables.$gap__xl
+      &--primero
+        grid-area: producto
+      &--segundo
+        grid-area: legal
+      &__title
+        color: variables.$color__bg
+        text-align: center
+        margin-block: 1px
+        padding-block: variables.$gap__m
+        font-weight: bold
+        &::marker
+          content: ""
+  .nav
+    &__ul
+      margin: 0
+      flex-direction: column
+    &__link
+      display: block
+      text-align: center
+      color: variables.$color__bg
+      padding-block: variables.$gap__m
+  &__logo
+    grid-area: logo
+    max-width: 10rem
+    margin-block: variables.$gap__l
+
+  &__copy
+    grid-area: copy
+    color: white
+
+.social
+  grid-area: social
+  gap: variables.$gap__m
+  margin-top: variables.$gap__l
+  &__icon
+    width: variables.$gap__xxl
